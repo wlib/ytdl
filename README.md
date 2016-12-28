@@ -22,15 +22,14 @@ To have all the right functionality right off the bat, you will need the followi
 + A [Cloudinary](https://cloudinary.com) account, for their free and simple image manipulation API
 + A [Google URL shortener](https://console.developers.google.com/apis/api/urlshortener) API key, for the quick share links
 
-Go to each file in `src/ts/`, and edit the variables at the top to have their required values
-
 None of the above are absolutely nessesary, but highly recommended.
 
 ## Installation
 
-First, make sure you have the right [dependencies](#dependencies), and changed the variables at the top of each file in `src/ts/`
+First, make sure you have the right [dependencies](#dependencies)
 
 + `git clone https://github.com/wlib/youtube-dl.git`
++ Change the variables at the top of each file in `src/ts/` to have their required values, such as your API key
 + `cd youtube-dl/ && ./INSTALL`
 + The main directory to put on your website will be generated in `ytdl/`
 + A second directory is needed to have the share functionality, it is in `share/`
