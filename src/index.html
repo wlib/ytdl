@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Youtube Downloader</title>
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <link rel="stylesheet" type="text/css" href="./css/ytdl.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta id="theme" name="theme-color" content="#E62117">
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="title">
+        <a id="bookmarklet">Youtube Downloader</a>
+      </h1>
+      <div id="info" style="display: none">
+        <h3>Drag the YouTube Downloader to your bookmarks bar, then click it while you are watching a YouTube video</h3>
+        <h3>On click, you will be redirected to a page like this:</h3>
+        <img src="./img/endpoint.png">
+        <h3><a href="https://de.surge.sh/ytdl/howitworks/">How does this work?</a></h3>
+      </div>
+      <div id="main" style="display: none">
+        <div id="player"></div>
+        <div id="download">
+          <div id="audioDownload">
+            <h2>Download The Audio :
+              <span>
+                <a id="audioDownloadUrl">Right click > Save Link As</a>
+              </span>
+            </h2>
+          </div>
+          <div id="share">
+            <h2>Share it:
+              <span>
+                <a id="shareUrl"></a>
+              </span>
+            </h2>
+            <p id="shareNote">Note: Youtube audio stream links change frequently, so treat this share link as temporary.</p>
+          </div>
+          <h3><a id="originalUrl">Original Video</a></h3>
+        </div>
+      </div>
+    </div>
+    <script src="./js/endpoint.js"></script>
+  </body>
+</html>

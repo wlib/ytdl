@@ -1,0 +1,42 @@
+html {
+  background-size: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+#info {
+  text-align: center;
+}
+
+#title {
+  color: #c3c3c3;
+  font-size: 10rem;
+  mix-blend-mode: lighten;
+  margin: 5% auto;
+  width: 85%;
+}
+
+#player {
+  margin: 5% auto;
+  width: 50%;
+  text-align: center;
+}
+
+#download {
+  color: #d6d6d6;
+  font-size: 5rem;
+  mix-blend-mode: lighten;
+  text-align: center;
+  width: 80%;
+  padding: 5%;
+  margin: 10% auto;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#shareNote {
+  color: #d6d6d6;
+  font-size: 2rem;
+}

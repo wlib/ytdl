@@ -1,0 +1,36 @@
+#!/bin/bash
+# YouTube-DL Installation Script - MIT - By Daniel Ethridge https://git.io/de
+
+# First we need to change our working directory to here
+cd -P -- "$(dirname -- "$0")"
+
+# Then clear out the `ytdl` directory if it exists
+if [ -d "ytdl" ]; then
+  echo "Warning - your ytdl directory will be cleared!"
+  if [ "$1" != "no-wait" ]; then
+    echo "You have 5 seconds to press CTRL+C and cancel..."
+    echo "Use the argument 'no-wait' to avoid this next time"
+    sleep 5
+  fi
+  echo "Deleting the current ytdl directory..."
+  rm -r ytdl
+fi
+
+# Make the ytdl directory
+echo "Making an output directory at $(pwd)/ytdl..."
+mkdir ytdl
+
+# Copy everything static to ytdl, e.g. src/[css|img|index.html]
+echo "Copying static files..."
+cp -r src/css ytdl/css
+cp -r src/img ytdl/img
+cp src/index.html ytdl/index.html
+
+# TypeScript compile to js
+echo "Compiling with TypeScript..."
+tsc src/ts/client.ts --outFile ytdl/js/client.js
+tsc src/ts/endpoint.ts --outFile ytdl/js/endpoint.js
+
+# Tell the user what next
+echo "Great, now you need to copy the ytdl/ and share/ directories into your website's root."
+echo "Thanks for using YouTube-DL! Help the project at https://github.com/wlib/youtube-dl"

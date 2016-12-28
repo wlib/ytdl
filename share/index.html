@@ -1,0 +1,14 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      var googlid = window.location.hash.substr(1);
+      if (googlid.length === 6) {
+        window.location.href = "https://goo.gl/" + googlid;
+      }
+      else {
+        window.location.href = document.referrer;
+      }
+    </script>
+  </body>
+</html>
