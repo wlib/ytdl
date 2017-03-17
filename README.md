@@ -1,4 +1,4 @@
-# YouTube-DL - YouTube media stream extractor/download service
+# YTDL- YouTube media stream extractor/download service
 
 This service can be hosted on your own website, and doesn't require you to have any server-side processes, everything hosted is static.
 
@@ -6,11 +6,11 @@ This service can be hosted on your own website, and doesn't require you to have 
 
 The user goes to your website and sees simple instructions telling them how to use the service, and follows them by saving the bookmarklet:
 
-![The landing page](https://github.com/wlib/ytdl/raw/master/src/img/landing.png "The landing page")
+![The landing page](https://github.com/wlib/ytdl/raw/master/img/landing.png "The landing page")
 
 The user decides to go to their favorite music video on YouTube and then clicks on your bookmarklet, immediately,they are redirected to the output page on your website:
 
-![Example output page](https://github.com/wlib/ytdl/raw/master/src/img/endpoint.png "Example output page, the link is dead now, don't even try it")
+![Example output page](https://github.com/wlib/ytdl/raw/master/img/endpoint.png "Example output page, the link is dead now, don't even try it")
 
 It's that simple
 
