@@ -25,7 +25,7 @@ if (ytInfo.audioUrl) {
   document.getElementById("main").setAttribute("style", "display: block");
   if (googlApiKey) {
     makeShortUrl(googlApiKey).then(url =>{
-      const share = document.querySelector("shareUrl")
+      const share = document.querySelector("#shareUrl")
       share.setAttribute("href", url);
       share.innerText = url;
     });
